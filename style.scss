@@ -1,0 +1,397 @@
+$font1: 'Rosario',
+sans-serif;
+$font2: 'Raleway',
+sans-serif;
+$primary-color: #16a085;
+$hover-color:#333333;
+$p-color: #414141;
+$white-color: #ffffff;
+
+
+h1 {
+    font-family: $font1;
+    font-weight: bold;
+    font-size: 36px;
+    color: $white-color;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-family: $font1;
+    font-size: 24px;
+    color: $primary-color;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+h3 {
+    font-family: $font1;
+    font-size: 18px;
+    color: $primary-color;
+}
+
+h4 {
+    font-family: $font1;
+    font-size: 16px;
+    color: $white-color;
+    text-transform: lowercase;
+    text-align: center;
+
+}
+
+p {
+    font-family: $font2;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.btn-arrow {
+
+    .ellipse {
+        cursor: pointer;
+        height: 32px;
+        width: 32px;
+        background-color: $white-color;
+        border-radius: 50%;
+
+    }
+
+    .arrow {
+        position: relative;
+        top: 8px;
+
+        i {
+            color: $primary-color;
+        }
+    }
+
+}
+
+header {
+    background-image: url(images/mountain-pic.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+
+    .menu {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: auto;
+        align-items: center;
+        margin-top: 100px;
+        height: 50px;
+        justify-content: space-between;
+
+
+        .nav-item {
+            flex: 0 0 auto;
+            color: $white-color;
+            font-family: $font1;
+            font-size: 18pt;
+            font-weight: bold;
+            cursor: pointer;
+            margin-right: 65px;
+        }
+
+        .nav-item:last-child {
+            margin-right: 0px;
+        }
+
+        :hover {
+            color: $hover-color;
+        }
+
+    }
+
+    .title {
+        margin-top: 150px;
+    }
+
+    .row-title {
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        img {
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+header {
+    .row-btn {
+        justify-content: center;
+    }
+}
+
+.row-btn {
+    display: flex;
+
+    .btn {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 15px;
+        position: relative;
+
+        input {
+            width: 190px;
+            height: 60px;
+            background-color: $primary-color;
+            color: $white-color;
+            border: none;
+            font-size: 16pt;
+            padding-right: 45px;
+            cursor: pointer;
+        }
+    :hover {
+        background-color: $hover-color;
+    }    
+
+        .btn-arrow {
+            position: relative;
+            top: -46px;
+            left: 145px;
+
+            .arrow {
+                left: 11px;
+            }
+        }
+    }
+}
+
+.row-social-media {
+    display: flex;
+    justify-content: center;
+
+    .social-media-item {
+        margin-right: 15px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        
+        i {
+            color: $white-color;
+            font-size: 24px;
+        }
+        
+        :hover {
+            color:coral;
+        }
+    }
+
+}
+
+
+
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+.dotted {
+    background-image: url(images/dotted-pattern.png);
+}
+
+.white {
+    background-color: $white-color;
+}
+
+.photo-app,
+.overview {
+    p {
+        line-height: 30px;
+    }
+
+    .pic {
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+.gallery-about {
+    text-align: center;
+    margin-top: 60px;
+
+}
+
+.gallery-pictures {
+    margin-top: 50px;
+    
+        .comment {
+            position: relative;
+            top: -36px;
+            left: 12px;
+            font-size: 28px;
+            color: white;
+            opacity: .75;
+            cursor: pointer;
+
+            :hover {
+                color: lightskyblue; 
+            }
+        }
+
+        .heart {
+            position: relative;
+            top: -66px;
+            left: 55px;
+            font-size: 28px;
+            color: white;
+            opacity: .75;
+            cursor: pointer;
+
+            :hover {
+                color: pink;
+            }
+        }
+        
+        .liked {
+            color:pink;
+        }  
+}
+
+
+@media(max-width:767px) {
+    .col-xs-hidden {
+        display: none;
+    }
+}
+
+.subscribe {
+    background-image: url(images/subscribe.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+
+    h2 {
+        color: $white-color;
+        text-align: center;
+        margin-top: 210px;
+        margin-bottom: 40px;
+    }
+
+    .form-email {
+        text-align: center;
+        position: relative;
+        margin-bottom: 260px;
+
+
+        input {
+            height: 50px;
+            width: 60%;
+            border: none;
+            border-radius: 25px;
+            font-size: 24px;
+            padding-left: 25px;
+            font-family: $font1;
+
+
+
+            ::placeholder {
+                font-family: $font1;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 20px;
+            }
+        }
+
+        .btn-arrow {
+            float: right;
+            position: relative;
+            top: 10px;
+            right: 27%;
+
+            .ellipse {
+                cursor: pointer;
+                height: 32px;
+                width: 32px;
+                background-color: $primary-color;
+                border-radius: 50%;
+
+            }
+
+            .arrow {
+                left: 2px;
+
+                i {
+                    color: $white-color;
+                }
+            }
+        }
+    }
+}
+
+.btns {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .ellipse {
+        cursor: pointer;
+        height: 32px;
+        width: 32px;
+        background-color: $primary-color;
+        border-radius: 50%;
+
+    }
+
+    .arrow {
+        left: 11px;
+
+
+        i {
+            color: $white-color;
+        }
+    }
+}
+
+.download {
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        color: $p-color;
+        text-align: center;
+        line-height: 30px;
+    }
+}
+
+.row-store {
+    justify-content: space-evenly;
+
+    .ellipse-green-large {
+        width: 100px;
+        height: 100px;
+        background-color: $primary-color;
+        border-radius: 50%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        cursor: pointer;
+
+
+
+        .store-logo {
+            position: relative;
+            top: 18px;
+            left: 27px;
+        }
+    }
+
+}
+
+.ellipse-green-large:hover {
+    background-color: $hover-color;
+}
+
+footer {
+    background-color: #fff;
+
+    .row-footer {
+        height: 60px;
+        align-items: center;
+    }
+}

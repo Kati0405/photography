@@ -1,0 +1,408 @@
+h1 {
+  font-family: "Rosario", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Rosario", sans-serif;
+  font-size: 24px;
+  color: #16a085;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+h3 {
+  font-family: "Rosario", sans-serif;
+  font-size: 18px;
+  color: #16a085;
+}
+
+h4 {
+  font-family: "Rosario", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.btn-arrow .ellipse {
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.btn-arrow .arrow {
+  position: relative;
+  top: 8px;
+}
+
+.btn-arrow .arrow i {
+  color: #16a085;
+}
+
+header {
+  background-image: url(images/mountain-pic.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+  height: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .menu .nav-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  color: #ffffff;
+  font-family: "Rosario", sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 65px;
+}
+
+header .menu .nav-item:last-child {
+  margin-right: 0px;
+}
+
+header .menu :hover {
+  color: #333333;
+}
+
+header .title {
+  margin-top: 150px;
+}
+
+header .row-title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+header .row-title img {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+header .row-btn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.row-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row-btn .btn {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 15px;
+  position: relative;
+}
+
+.row-btn .btn input {
+  width: 190px;
+  height: 60px;
+  background-color: #16a085;
+  color: #ffffff;
+  border: none;
+  font-size: 16pt;
+  padding-right: 45px;
+  cursor: pointer;
+}
+
+.row-btn .btn :hover {
+  background-color: #333333;
+}
+
+.row-btn .btn .btn-arrow {
+  position: relative;
+  top: -46px;
+  left: 145px;
+}
+
+.row-btn .btn .btn-arrow .arrow {
+  left: 11px;
+}
+
+.row-social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.row-social-media .social-media-item {
+  margin-right: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.row-social-media .social-media-item i {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.row-social-media .social-media-item :hover {
+  color: coral;
+}
+
+.menu::-webkit-scrollbar {
+  display: none;
+}
+
+.dotted {
+  background-image: url(images/dotted-pattern.png);
+}
+
+.white {
+  background-color: #ffffff;
+}
+
+.photo-app p,
+.overview p {
+  line-height: 30px;
+}
+
+.photo-app .pic,
+.overview .pic {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.gallery-about {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.gallery-pictures {
+  margin-top: 50px;
+}
+
+.gallery-pictures .comment {
+  position: relative;
+  top: -36px;
+  left: 12px;
+  font-size: 28px;
+  color: white;
+  opacity: .75;
+  cursor: pointer;
+}
+
+.gallery-pictures .comment :hover {
+  color: lightskyblue;
+}
+
+.gallery-pictures .heart {
+  position: relative;
+  top: -66px;
+  left: 55px;
+  font-size: 28px;
+  color: white;
+  opacity: .75;
+  cursor: pointer;
+}
+
+.gallery-pictures .heart :hover {
+  color: pink;
+}
+
+.gallery-pictures .liked {
+  color: pink;
+}
+
+@media (max-width: 767px) {
+  .col-xs-hidden {
+    display: none;
+  }
+}
+
+.subscribe {
+  background-image: url(images/subscribe.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.subscribe h2 {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 210px;
+  margin-bottom: 40px;
+}
+
+.subscribe .form-email {
+  text-align: center;
+  position: relative;
+  margin-bottom: 260px;
+}
+
+.subscribe .form-email input {
+  height: 50px;
+  width: 60%;
+  border: none;
+  border-radius: 25px;
+  font-size: 24px;
+  padding-left: 25px;
+  font-family: "Rosario", sans-serif;
+}
+
+.subscribe .form-email input ::-webkit-input-placeholder {
+  font-family: "Rosario", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.subscribe .form-email input :-ms-input-placeholder {
+  font-family: "Rosario", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.subscribe .form-email input ::-ms-input-placeholder {
+  font-family: "Rosario", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.subscribe .form-email input ::placeholder {
+  font-family: "Rosario", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.subscribe .form-email .btn-arrow {
+  float: right;
+  position: relative;
+  top: 10px;
+  right: 27%;
+}
+
+.subscribe .form-email .btn-arrow .ellipse {
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  background-color: #16a085;
+  border-radius: 50%;
+}
+
+.subscribe .form-email .btn-arrow .arrow {
+  left: 2px;
+}
+
+.subscribe .form-email .btn-arrow .arrow i {
+  color: #ffffff;
+}
+
+.btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btns .ellipse {
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  background-color: #16a085;
+  border-radius: 50%;
+}
+
+.btns .arrow {
+  left: 11px;
+}
+
+.btns .arrow i {
+  color: #ffffff;
+}
+
+.download h2 {
+  text-align: center;
+}
+
+.download p {
+  color: #414141;
+  text-align: center;
+  line-height: 30px;
+}
+
+.row-store {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.row-store .ellipse-green-large {
+  width: 100px;
+  height: 100px;
+  background-color: #16a085;
+  border-radius: 50%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.row-store .ellipse-green-large .store-logo {
+  position: relative;
+  top: 18px;
+  left: 27px;
+}
+
+.ellipse-green-large:hover {
+  background-color: #333333;
+}
+
+footer {
+  background-color: #fff;
+}
+
+footer .row-footer {
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
